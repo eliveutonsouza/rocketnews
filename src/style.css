@@ -1,0 +1,94 @@
+body {
+  display: grid;
+  grid-template-columns: 53rem 1fr;
+  grid-template-areas:
+    "header background"
+    "main background";
+}
+
+header {
+  height: 30vh;
+  grid-area: header;
+  padding: 2rem 2rem 0;
+  background-color: var(--body-bg-color);
+}
+
+header img {
+  height: 5.87rem;
+}
+
+main {
+  padding: 2rem 2rem 0;
+  grid-area: main;
+  height: 70vh;
+  background-color: var(--body-bg-color);
+}
+
+main h2 {
+  color: var(--title-color);
+  margin-bottom: 0.2rem;
+}
+
+main h3 {
+  color: var(--text-color);
+  margin-bottom: 0.6rem;
+}
+
+main p {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+main a {
+  color: var(--bg-button-color);
+}
+
+.input-email {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.9rem;
+  color: var(--form-color);
+}
+
+form input {
+  width: 55rem;
+  height: 3rem;
+  z-index: 9999;
+  border: 0;
+}
+
+form button {
+  border: 0;
+  height: 3rem;
+  width: 3rem;
+  background-color: var(--bg-button-color);
+  z-index: 9999;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-lerprimeiro {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn-lerprimeiro img {
+  height: 1.4rem;
+}
+
+.background {
+  grid-area: background;
+  height: 100vh;
+  background-image: url("/src/assets/read_news.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
